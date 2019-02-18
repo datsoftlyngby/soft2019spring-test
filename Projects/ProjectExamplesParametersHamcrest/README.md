@@ -1,6 +1,7 @@
 ## ProjectExamplesParametersHamcrest
 
 ### Implemented
+- TestExamples: Equivalence partitions / Boundary values
 - TestExamples: Decision tables / State transition models
 - TestExamples: Repeated test / Parameterized test / Dynamic test
 - TestExamples: Hamcrest Matchers
