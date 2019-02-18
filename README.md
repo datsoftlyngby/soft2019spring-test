@@ -60,7 +60,7 @@ It is a requirement, that you must earn at least 80 study points to be eligible 
 
 | Assignment id | Assignment name | Assignment link |
 |-------------|:-------------:|:-------------:|
-| 1 |  Test cases  | [01 Test cases Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/01%20Test%20cases%20assignment.pdf)
+| 1 |  Test cases  | [01 Test Cases Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/01%20Test%20cases%20assignment.pdf)
 | 2 |  Unit testing  | [02 Unit Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/02%20Unit%20Testing%20Assignment.pdf) |
 | 3 |  Testability  |[03 Testability Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/03%20Testability%20assignment.pdf) |
 | 4 |  Specification based testing techniques | [04 Specification Based Testing Techniques Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/04%20Specification%20Based%20Testing%20Techniques%20Assignment.pdf) |
