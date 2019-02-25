@@ -1,6 +1,8 @@
 package mockito;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 import org.junit.runner.RunWith;
 import org.junit.platform.runner.JUnitPlatform;
@@ -123,5 +125,30 @@ public class T_E_S_T_Mockito
         System.out.println("ArgumentCaptorAllValues: " + argumentCaptor.getAllValues());
         
         assertThat(List.of("MockedListElement1", "MockedListElement2", "MockedListElement3"), is(argumentCaptor.getAllValues()));
+    }
+    
+    @Test
+    public void testMockitoMockCalendar()
+    {
+        Calendar mockCalendar = mock(Calendar.class);
+                
+        System.out.println("MockCalendarHour: " + mockCalendar.get(Calendar.HOUR));
+        System.out.println("MockCalendarYear: " + mockCalendar.get(Calendar.YEAR));
+        System.out.println("MockCalendarFirstDayOfWeek: " + mockCalendar.getFirstDayOfWeek());
+        System.out.println("MockCalendarTime: " + mockCalendar.getTime());
+
+        when(mockCalendar.get(Calendar.HOUR)).thenReturn(123456);
+        when(mockCalendar.get(Calendar.YEAR)).thenReturn(987654);
+        when(mockCalendar.getFirstDayOfWeek()).thenReturn(-58);
+        when(mockCalendar.getTimeInMillis()).thenReturn(new GregorianCalendar(1834, 11, 11, 23, 34, 45).getTimeInMillis());
+        
+        System.out.println("MockCalendarHour: " + mockCalendar.get(Calendar.HOUR));
+        System.out.println("MockCalendarYear: " + mockCalendar.get(Calendar.YEAR));
+        System.out.println("MockCalendarFirstDayOfWeek: " + mockCalendar.getFirstDayOfWeek());
+        System.out.println("MockCalendarTime: " + mockCalendar.getTime());
+        
+        assertThat(mockCalendar.get(Calendar.HOUR), is(123456));
+        
+        verify(mockCalendar, times(2)).getFirstDayOfWeek();
     }
 }
