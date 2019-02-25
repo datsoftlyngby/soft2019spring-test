@@ -1,9 +1,11 @@
 package testdoubles;
 
+import order.MailServiceInterface;
 import order.OrderInterface;
 import order.Order;
 import order.WarehouseStub;
 import order.MailServiceStub;
+import order.WarehouseInterface;
 import org.junit.runner.RunWith;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.jupiter.api.Test;
@@ -20,8 +22,8 @@ public class OrderStateTester
     {
         OrderInterface order = new Order(product, 50);
         
-        MailServiceStub mailService = new MailServiceStub();
-        WarehouseStub warehouse = new WarehouseStub();
+        MailServiceInterface mailService = new MailServiceStub();
+        WarehouseInterface warehouse = new WarehouseStub();
         
         order.setMailService(mailService);
         boolean orderOK = order.requestOrder(warehouse);
@@ -35,8 +37,8 @@ public class OrderStateTester
     {
         OrderInterface order = new Order(product, 51);
         
-        MailServiceStub mailService = new MailServiceStub();
-        WarehouseStub warehouse = new WarehouseStub();
+        MailServiceInterface mailService = new MailServiceStub();
+        WarehouseInterface warehouse = new WarehouseStub();
         
         order.setMailService(mailService);
         boolean orderOK = order.requestOrder(warehouse);

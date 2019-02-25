@@ -3,7 +3,7 @@ package account;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestAccountStateTransition
+public class TestAccountStateTransitionModel
 {
     @Test
     public void testWithdraw()

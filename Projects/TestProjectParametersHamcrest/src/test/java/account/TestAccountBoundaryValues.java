@@ -3,7 +3,7 @@ package account;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestAccountBoundaryValueAnalysis
+public class TestAccountBoundaryValues
 {
     Account account = new Account();
     double balance, percentage;
