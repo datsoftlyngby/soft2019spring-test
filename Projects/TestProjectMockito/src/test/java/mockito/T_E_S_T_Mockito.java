@@ -1,0 +1,127 @@
+package mockito;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.junit.runner.RunWith;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.InOrder;
+import org.mockito.Spy;
+import org.mockito.Captor;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.atLeast;
+import static org.mockito.Mockito.atMost;
+import static org.mockito.Mockito.inOrder;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.ArgumentMatchers.anyString;
+
+@RunWith(JUnitPlatform.class)
+public class T_E_S_T_Mockito
+{  
+    @BeforeEach
+    public void setUp()
+    {
+        MockitoAnnotations.initMocks(this);
+    }
+    
+    @Mock
+    ArrayList<String> mockList1 = new ArrayList();
+
+    @Test
+    public void testMockitoMocks()
+    {
+        System.out.println("MockList1IsEmpty: " + mockList1.isEmpty());
+        mockList1.add("FirstString");
+        assertThat(mockList1.size(), is(0));
+        mockList1.clear();
+        
+        when(mockList1.get(10)).thenReturn("Hello");
+        assertThat(mockList1.size(), is(0));
+        assertThat(mockList1.get(10).length(), is(5));
+        assertThat(mockList1.get(10), is("Hello"));
+        verify(mockList1).isEmpty();
+        verify(mockList1, times(2)).get(10);
+        
+        /*
+        MockitoAnnotations.initMocks(this);
+        ArrayList<String> mockList2 = mock(ArrayList.class);
+        when(mockList2.get(10)).thenReturn("Hello");
+        assertThat(mockList2.size(), is(0));
+        assertThat(mockList2.get(10).length(), is(5));
+        assertThat(mockList2.get(10), is("Hello"));
+        verify(mockList2).isEmpty();
+        verify(mockList2, times(2)).get(10);
+        */
+        
+        verify(mockList1, atLeast(1)).get(10);
+        verify(mockList1, atMost(3)).get(10);
+        verify(mockList1, never()).clone();                
+        verify(mockList1, never()).contains(anyString());
+        verify(mockList1).add("FirstString");
+        verify(mockList1).add(anyString());        
+
+        mockList1.add("SomeString");
+        mockList1.clear();
+        mockList1.size();
+        InOrder inOrder = inOrder(mockList1);
+        inOrder.verify(mockList1).add("SomeString");
+        inOrder.verify(mockList1).clear();
+        inOrder.verify(mockList1).size();
+    }
+    
+    @Spy
+    ArrayList<String> spyArrayList = spy(new ArrayList());
+    
+    @Test
+    public void testMockitoSpies()
+    {
+        ArrayList<String> spyList = spy(new ArrayList());
+        
+        System.out.println("SpyListIsEmpty: " + spyList.isEmpty());
+        
+        spyList.add("one");
+        spyList.add("two");
+        
+        System.out.println("SpyListIsEmpty: " + spyList.isEmpty());
+        
+        assertThat(spyList.size(), is(2));
+        
+        doReturn(100).when(spyList).size();
+        assertThat(spyList.size(), is(100));
+        
+        verify(spyList).add("one");
+        verify(spyList).add("two");
+    }
+    
+    @Captor
+    ArgumentCaptor argCaptor;
+
+    @Test
+    public void testMockitoArgumentCaptor()
+    {
+        ArrayList<String> mockedList = mock(ArrayList.class);
+        ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
+        
+        mockedList.add("MockedListElement1");
+        mockedList.add("MockedListElement2");
+        mockedList.add("MockedListElement3");
+        
+        verify(mockedList, times(3)).add(argumentCaptor.capture());
+        
+        System.out.println("ArgumentCaptorValue: " + argumentCaptor.getValue());
+        System.out.println("ArgumentCaptorAllValues: " + argumentCaptor.getAllValues());
+        
+        assertThat(List.of("MockedListElement1", "MockedListElement2", "MockedListElement3"), is(argumentCaptor.getAllValues()));
+    }
+}
