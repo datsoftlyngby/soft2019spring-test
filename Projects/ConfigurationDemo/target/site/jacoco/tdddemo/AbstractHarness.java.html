@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbstractHarness.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TDDDemo</a> &gt; <a href="index.source.html" class="el_package">tdddemo</a> &gt; <span class="el_source">AbstractHarness.java</span></div><h1>AbstractHarness.java</h1><pre class="source lang-java linenums">package tdddemo;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Date;
+
+<span class="nc" id="L7">public abstract class AbstractHarness {</span>
+
+<span class="nc" id="L9">    AirlineAgency airlineAgency = null;</span>
+<span class="nc" id="L10">    CabAgency cabAgency = null;</span>
+<span class="nc" id="L11">    TripPlanner tripPlanner = null;</span>
+
+    abstract TripPlanner configure() throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, IllegalArgumentException, InvocationTargetException;
+
+    public void runHarness() throws Exception {
+<span class="nc" id="L16">        this.configure();</span>
+<span class="nc" id="L17">        this.getPlanner().planTrip(</span>
+                &quot;1, Acme Street&quot;,
+                &quot;11111&quot;,
+                &quot;22222&quot;,
+<span class="nc" id="L21">                new Date(System.currentTimeMillis() + 7200000));</span>
+<span class="nc" id="L22">    }</span>
+
+    TripPlanner getPlanner() {
+<span class="nc" id="L25">        return tripPlanner;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

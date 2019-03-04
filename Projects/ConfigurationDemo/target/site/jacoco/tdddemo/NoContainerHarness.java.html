@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NoContainerHarness.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TDDDemo</a> &gt; <a href="index.source.html" class="el_package">tdddemo</a> &gt; <span class="el_source">NoContainerHarness.java</span></div><h1>NoContainerHarness.java</h1><pre class="source lang-java linenums">package tdddemo;
+
+import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Properties;
+
+/**
+ *
+ * @author TM
+ */
+<span class="nc" id="L12">public class NoContainerHarness extends AbstractHarness{</span>
+
+//    AirlineAgency airlineAgency = null;
+//    CabAgency cabAgency = null;
+//    TripPlanner tripPlanner = null;
+
+    public static void main(String[] args) throws Exception {
+<span class="nc" id="L19">        NoContainerHarness harness = new NoContainerHarness();</span>
+<span class="nc" id="L20">        harness.runHarness();</span>
+<span class="nc" id="L21">    }</span>
+
+      //returtype er redundant
+    @Override
+    TripPlanner configure() throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, IllegalArgumentException, InvocationTargetException, IOException {
+       
+<span class="nc" id="L27">        Properties prop = new Properties();</span>
+<span class="nc" id="L28">        prop.load(this.getClass().getResourceAsStream(&quot;/nocontainer-agency.properties&quot;));</span>
+<span class="nc" id="L29">        String airline = prop.getProperty(&quot;airline-agency-class&quot;);</span>
+<span class="nc" id="L30">        String cab = prop.getProperty(&quot;cab-agency-class&quot;);</span>
+<span class="nc" id="L31">        String trip = prop.getProperty(&quot;trip-planner-class&quot;);</span>
+        
+<span class="nc" id="L33">        Class airlineAgencyClass = Class.forName(airline);</span>
+<span class="nc" id="L34">        Class cabAgencyClass = Class.forName(cab);</span>
+<span class="nc" id="L35">        Class tripPlannerClass = Class.forName(trip);</span>
+//        Class airlineAgencyClass = Class.forName(properties.getProperty(&quot;airline-agency-class&quot;));
+//        Class cabAgencyClass = Class.forName(properties.getProperty(&quot;cab-agency-class&quot;));
+//        Class tripPlannerClass = Class.forName(properties.getProperty(&quot;trip-planner-class&quot;));
+
+<span class="nc bnc" id="L40" title="All 2 branches missed.">        if (AirlineAgency.class.isAssignableFrom(airlineAgencyClass)) {</span>
+            // Instantiate airline agency
+<span class="nc" id="L42">            airlineAgency = (AirlineAgency) airlineAgencyClass.newInstance();</span>
+        }
+<span class="nc bnc" id="L44" title="All 2 branches missed.">        if (CabAgency.class.isAssignableFrom(cabAgencyClass)) {</span>
+            // Instantiate CabAgency, and satisfy its dependency on an airlineagency.
+
+<span class="nc" id="L47">            Constructor constructor = cabAgencyClass.getConstructor(new Class[]{AirlineAgency.class});</span>
+<span class="nc" id="L48">            cabAgency = (CabAgency) constructor.newInstance(new Object[]{airlineAgency});</span>
+        }
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        if (TripPlanner.class.isAssignableFrom(tripPlannerClass)) {</span>
+<span class="nc" id="L51">            Constructor constructor = tripPlannerClass.getConstructor(new Class[]{AirlineAgency.class, CabAgency.class});</span>
+<span class="nc" id="L52">            tripPlanner = (TripPlanner) constructor.newInstance(new Object[]{airlineAgency, cabAgency});</span>
+        }
+<span class="nc" id="L54">        return tripPlanner;</span>
+
+    }
+
+//    public void runHarness() throws Exception {
+//        this.configure();
+//        this.getPlanner().planTrip(
+//                &quot;1, Acme Street&quot;,
+//                &quot;11111&quot;,
+//                &quot;22222&quot;,
+//                new Date(System.currentTimeMillis() + 7200000));
+//    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

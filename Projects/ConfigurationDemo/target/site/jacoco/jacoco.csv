@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+TDDDemo,tdddemo,AbstractHarness,31,0,0,0,9,0,3,0,3,0
+TDDDemo,tdddemo,FlightSchedule,5,0,0,0,2,0,2,0,2,0
+TDDDemo,tdddemo,SimpleAirlineAgency,7,0,0,0,2,0,2,0,2,0
+TDDDemo,tdddemo,ConstructorBasedTripPlanner,32,0,0,0,10,0,2,0,2,0
+TDDDemo,tdddemo,NoContainerHarness,112,0,6,0,21,0,6,0,3,0
+TDDDemo,tdddemo,ConstructorBasedCabAgency,10,0,0,0,5,0,2,0,2,0
