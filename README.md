@@ -65,7 +65,7 @@ It is a requirement, that you must earn at least 80 study points to be eligible 
 | 3 |  Testability  |[03 Testability Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/03%20Testability%20assignment.pdf) |
 | 4 |  Specification based testing techniques | [04 Specification Based Testing Techniques Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/04%20Specification%20Based%20Testing%20Techniques%20Assignment.pdf) |
 | 5 |  Dependencies  | [05 Dependencies Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/05%20Dependencies%20Assignment.pdf) |
-| 6 |  TDD  | [06 TDD Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/06%20TDD%20exercise.pdf)|
+| 6 |  TDD  | [06 TDD Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/06%20TDD%20assignment.pdf)|
 | 7 |  Integration testing  | |
 | 8 |  Functional testing  | |
 | 9 |  Nonfunctional testing  | |
