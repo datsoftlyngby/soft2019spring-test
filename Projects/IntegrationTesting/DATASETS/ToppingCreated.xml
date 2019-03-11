@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <cupcaketopping idTopping='1' cupcakeToppingName='Chocolate' price='5.0' />
+  <cupcaketopping idTopping='2' cupcakeToppingName='Vanilla' price='5.0' />
+  <cupcaketopping idTopping='3' cupcakeToppingName='Nutmeg' price='5.0' />
+  <cupcaketopping idTopping='4' cupcakeToppingName='Pistacio' price='6.0' />
+  <cupcaketopping idTopping='5' cupcakeToppingName='Almond' price='7.0' />
+  <cupcaketopping cupcakeToppingName='Coconut' price='8.0' />
+</dataset>

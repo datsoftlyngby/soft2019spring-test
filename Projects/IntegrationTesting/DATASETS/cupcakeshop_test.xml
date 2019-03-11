@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <cupcakebottom idBottom="1" cupcakeBottomName="Chocolate" price="5.0"/>
+  <cupcakebottom idBottom="2" cupcakeBottomName="Blueberry" price="5.0"/>
+  <cupcakebottom idBottom="3" cupcakeBottomName="Raspberry" price="5.0"/>
+  <cupcakebottom idBottom="4" cupcakeBottomName="Crispy" price="6.0"/>
+  <cupcakebottom idBottom="5" cupcakeBottomName="Strawberry" price="6.0"/>
+  <cupcakebottom idBottom="6" cupcakeBottomName="Rum/Raisin" price="7.0"/>
+  <cupcakebottom idBottom="7" cupcakeBottomName="Orange" price="8.0"/>
+  <cupcakebottom idBottom="8" cupcakeBottomName="Lemon" price="8.0"/>
+  <cupcakebottom idBottom="9" cupcakeBottomName="Blue cheese" price="9.0"/>
+  <cupcaketopping idTopping="1" cupcakeToppingName="Chocolate" price="5.0"/>
+  <cupcaketopping idTopping="2" cupcakeToppingName="Vanilla" price="5.0"/>
+  <cupcaketopping idTopping="3" cupcakeToppingName="Nutmeg" price="5.0"/>
+  <cupcaketopping idTopping="4" cupcakeToppingName="Pistacio" price="6.0"/>
+  <cupcaketopping idTopping="5" cupcakeToppingName="Almond" price="7.0"/>
+  <cupcake idCupcake="1" cupcakeName="ChoccoNut" idTopping="3" idBottom="1"/>
+  <cupcake idCupcake="2" cupcakeName="Chocolate with Chocolate" idTopping="1" idBottom="1"/>
+  <cupcake idCupcake="3" cupcakeName="Blueberry with Vanilla" idTopping="2" idBottom="2"/>
+  <cupcake idCupcake="4" cupcakeName="Chocolate with Vanilla" idTopping="2" idBottom="1"/>
+  <cupcake idCupcake="5" cupcakeName="Crispy with Pistacio" idTopping="4" idBottom="4"/>
+  <cupcake idCupcake="6" cupcakeName="Raspberry with Chocolate" idTopping="1" idBottom="3"/>
+  <cupcake idCupcake="7" cupcakeName="Chocolate with Vanilla" idTopping="2" idBottom="1"/>
+  <cupcake idCupcake="8" cupcakeName="Raspberry with Nutmeg" idTopping="3" idBottom="3"/>
+  <cupcake idCupcake="9" cupcakeName="ChoccoNut" idTopping="3" idBottom="1"/>
+  <cupcake idCupcake="10" cupcakeName="Chocolate with Chocolate" idTopping="1" idBottom="1"/>
+</dataset>
