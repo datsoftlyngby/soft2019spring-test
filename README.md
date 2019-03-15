@@ -2,6 +2,15 @@
 
 <hr>
 
+## Course Book
+"Developer Testing - Building Quality into Software" by Alexander Tarlinder <br>
+
+[Available at Amazon.com](https://www.amazon.com/Developer-Testing-Building-Addison-Wesley-Signature/dp/0134291069) <br>
+
+[See Author website](http://developertesting.rocks) 
+
+<hr>
+
 ## Overall objectives of the course
 To qualify the student to become a technical tester. <br>
 To be able to assist with operational execution of test activities, primarily with focus on automated test. <br>
@@ -77,15 +86,6 @@ The student can:
 
 <hr>
 
-## Course Book
-"Developer Testing - Building Quality into Software" by Alexander Tarlinder <br>
-
-[Available at Amazon.com](https://www.amazon.com/Developer-Testing-Building-Addison-Wesley-Signature/dp/0134291069) <br>
-
-[See Author website](http://developertesting.rocks) 
-
-<hr>
-
 ## Study Points
 
 You earn studypoints (SP) by completing a number of activities from the list below. <br>
@@ -103,23 +103,6 @@ There are 7 study point activities in total throughout the course.
 
 You can earn 100 study points for completing all the study point activities. <br>
 It is a requirement, that you must earn at least 80 study points to be eligible for the exam.
-
-<hr>
-
-## Assignments
-
-| Assignment id | Assignment name | Assignment link |
-|-------------|:-------------:|:-------------:|
-| 1 |  Test cases  | [01 Test Cases Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/01%20Test%20cases%20assignment.pdf)
-| 2 |  Unit testing  | [02 Unit Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/02%20Unit%20Testing%20Assignment.pdf) |
-| 3 |  Testability  |[03 Testability Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/03%20Testability%20assignment.pdf) |
-| 4 |  Specification based testing techniques | [04 Specification Based Testing Techniques Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/04%20Specification%20Based%20Testing%20Techniques%20Assignment.pdf) |
-| 5 |  Dependencies  | [05 Dependencies Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/05%20Dependencies%20Assignment.pdf) |
-| 6 |  TDD  | [06 TDD Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/06%20TDD%20assignment.pdf)|
-| 7 |  Integration testing  | [07 Integration Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/07%20Integration%20Testing%20Assignment.pdf)|
-| 8 |  Functional testing  | |
-| 9 |  Nonfunctional testing  | |
-| 10 |  Continuous integration  | |
 
 <hr>
 
@@ -143,6 +126,23 @@ Each review should have an extent of approximately 2400 characters and should co
 * What could be improved? How?
 * Overall, what did you think of the hand-in?
 * What did you learn from this hand-in? Use this space for yourself, think about what you learned that you can use in the future.
+
+<hr>
+
+## Assignments
+
+| Assignment id | Assignment name | Assignment link |
+|-------------|:-------------:|:-------------:|
+| 1 |  Test cases  | [01 Test Cases Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/01%20Test%20cases%20assignment.pdf)
+| 2 |  Unit testing  | [02 Unit Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/02%20Unit%20Testing%20Assignment.pdf) |
+| 3 |  Testability  |[03 Testability Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/03%20Testability%20assignment.pdf) |
+| 4 |  Specification based testing techniques | [04 Specification Based Testing Techniques Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/04%20Specification%20Based%20Testing%20Techniques%20Assignment.pdf) |
+| 5 |  Dependencies  | [05 Dependencies Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/05%20Dependencies%20Assignment.pdf) |
+| 6 |  TDD  | [06 TDD Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/06%20TDD%20assignment.pdf)|
+| 7 |  Integration testing  | [07 Integration Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/07%20Integration%20Testing%20Assignment.pdf)|
+| 8 |  Functional testing  | |
+| 9 |  Nonfunctional testing  | |
+| 10 |  Continuous integration  | |
 
 <hr>
 
