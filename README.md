@@ -19,7 +19,7 @@ Testable code, code coverage, regression testing, technical reviews, frameworks 
 
 <hr>
 
-## Learning objectives
+## Learning objectives (General)
 ### Knowledge
 The student must have knowledge of:
 
@@ -44,45 +44,45 @@ The student can:
 * Plan and manage the implementation of internal as well as external test of a system
 * Design testable systems
 
-### Learning objectives for each topic
+## Learning objectives (Per topic)
 
-#### Test cases
+### Test cases
 
-#### Unit testing
+### Unit testing
 - Produce testable code
 - Design, structure, and automate tests
 - Know how to apply equivalence partitioning and boundary value analysis in tests
 - Know general features and usage of xUnit Framework API
 - Implement high quality automated tests with xUnit Framework
 
-#### Testability
+### Testability
 
-#### Specification based testing techniques
+### Specification based testing techniques
 - Describe the benefits and construction of decision tables and state transition models in the context of test case design
 - Create and use decision tables and state transition models in tests
 - Explain the concept and need for data-driven testing and getting test data from files
 - Perform repeated, parameterized and dynamic tests with uniform input values from different sources, such as arrays, lists and files
 - Explain the advantages and the disadvantages of different assertion libraries and using alternative matchers
 
-#### Dependencies
+### Dependencies
 - Use interfaces and apply dependency injection to make code more testable
 - Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
 - Perform state testing and behavior testing
 - Be able to setup and use Mockito
 
-#### TDD
+### TDD
 
-#### Integration testing
+### Integration testing
 -	Understand integration testing in general
 -	Know different approaches to integration testing
 -	Handle production and test databases separately
 -	Automate integration tests using test databases, database testing frameworks, in-memory databases and mocking
 
-#### Functional testing
+### Functional testing
 
-#### Nonfunctional testing
+### Nonfunctional testing
 
-#### Continuous integration / Continous deployment
+### Continuous integration / Continous deployment
 
 <hr>
 
