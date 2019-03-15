@@ -87,7 +87,6 @@ The student can:
 <hr>
 
 ## Study Points
-
 You earn studypoints (SP) by completing a number of activities from the list below. <br>
 There are 7 study point activities in total throughout the course. 
 
@@ -126,6 +125,9 @@ Each review should have an extent of approximately 2400 characters and should co
 * What could be improved? How?
 * Overall, what did you think of the hand-in?
 * What did you learn from this hand-in? Use this space for yourself, think about what you learned that you can use in the future.
+
+### Peer grade system
+Starting the 18th of March in week 12 and ending the 29th of April in week there will furthermore be the possibility each week, to hand in an assignment and doing a review with the peer grade system, apart from the Moodle option if this is preferred before the final deadline for the peer reviews is reached.
 
 <hr>
 
