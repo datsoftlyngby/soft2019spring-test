@@ -1,10 +1,14 @@
 # Test
 
+<hr>
+
 ## Overall objectives of the course
 To qualify the student to become a technical tester. <br>
 To be able to assist with operational execution of test activities, primarily with focus on automated test. <br>
 The profile is an integrated tester/developer profile, i.e. a developer with enhanced test skills where focus is on test and quality so that quality can be built into the code from the beginning. <br>
 Testable code, code coverage, regression testing, technical reviews, frameworks for automated testing and test data generation are primary activities for the profile.
+
+<hr>
 
 ## Learning objectives
 ### Knowledge
@@ -71,12 +75,16 @@ The student can:
 
 #### Continuous integration / Continous deployment
 
+<hr>
+
 ## Course Book
 "Developer Testing - Building Quality into Software" by Alexander Tarlinder <br>
 
 [Available at Amazon.com](https://www.amazon.com/Developer-Testing-Building-Addison-Wesley-Signature/dp/0134291069) <br>
 
 [See Author website](http://developertesting.rocks) 
+
+<hr>
 
 ## Study Points
 
@@ -96,6 +104,8 @@ There are 7 study point activities in total throughout the course.
 You can earn 100 study points for completing all the study point activities. <br>
 It is a requirement, that you must earn at least 80 study points to be eligible for the exam.
 
+<hr>
+
 ## Assignments
 
 | Assignment id | Assignment name | Assignment link |
@@ -110,6 +120,8 @@ It is a requirement, that you must earn at least 80 study points to be eligible 
 | 8 |  Functional testing  | |
 | 9 |  Nonfunctional testing  | |
 | 10 |  Continuous integration  | |
+
+<hr>
 
 ## Peer Reviews
 Each student will have to review assignments from other students in order to earn study points for the peer reviews. <br>
@@ -132,10 +144,14 @@ Each review should have an extent of approximately 2400 characters and should co
 * Overall, what did you think of the hand-in?
 * What did you learn from this hand-in? Use this space for yourself, think about what you learned that you can use in the future.
 
+<hr>
+
 ## Semester project
 The semester project will start the 29th of April in week 18 and end the 24th of May.
 It must be completed in groups consisting 4 - 5 group members.
 During the semester project period, the group must attend two group reviews of their project, in order to receive the study points given for them.
+
+<hr>
 
 ## Exam
 
