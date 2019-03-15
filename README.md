@@ -31,6 +31,46 @@ The student can:
 * Plan and manage the implementation of internal as well as external test of a system
 * Design testable systems
 
+### Learning objectives for each topic
+
+#### Test cases
+
+#### Unit testing
+- Produce testable code
+- Design, structure, and automate tests
+- Know how to apply equivalence partitioning and boundary value analysis in tests
+- Know general features and usage of xUnit Framework API
+- Implement high quality automated tests with xUnit Framework
+
+#### Testability
+
+#### Specification based testing techniques
+- Describe the benefits and construction of decision tables and state transition models in the context of test case design
+- Create and use decision tables and state transition models in tests
+- Explain the concept and need for data-driven testing and getting test data from files
+- Perform repeated, parameterized and dynamic tests with uniform input values from different sources, such as arrays, lists and files
+- Explain the advantages and the disadvantages of different assertion libraries and using alternative matchers
+
+#### Dependencies
+- Use interfaces and apply dependency injection to make code more testable
+- Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
+- Perform state testing and behavior testing
+- Be able to setup and use Mockito
+
+#### TDD
+
+#### Integration testing
+-	Understand integration testing in general
+-	Know different approaches to integration testing
+-	Handle production and test databases separately
+-	Automate integration tests using test databases, database testing frameworks, in-memory databases and mocking
+
+#### Functional testing
+
+#### Nonfunctional testing
+
+#### Continuous integration / Continous deployment
+
 ## Course Book
 "Developer Testing - Building Quality into Software" by Alexander Tarlinder <br>
 
@@ -93,7 +133,9 @@ Each review should have an extent of approximately 2400 characters and should co
 * What did you learn from this hand-in? Use this space for yourself, think about what you learned that you can use in the future.
 
 ## Semester project
-TBD
+The semester project will start the 29th of April in week 18 and end the 24th of May.
+It must be completed in groups consisting 4 - 5 group members.
+During the semester project period, the group must attend two group reviews of their project, in order to receive the study points given for them.
 
 ## Exam
 
