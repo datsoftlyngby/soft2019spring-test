@@ -142,7 +142,7 @@ Starting the 18th of March in week 12 and ending the 29th of April in week there
 | 5 |  Dependencies  | [05 Dependencies Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/05%20Dependencies%20Assignment.pdf) |
 | 6 |  TDD  | [06 TDD Assignment ](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/06%20TDD%20assignment.pdf)|
 | 7 |  Integration testing  | [07 Integration Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/07%20Integration%20Testing%20Assignment.pdf)|
-| 8 |  Functional testing  | |
+| 8 |  Functional testing  |[08 Functional Testing (Selenium) - see end of slide deck](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Slides/08%20Functional%20testing.pdf) |
 | 9 |  Nonfunctional testing  | |
 | 10 |  Continuous integration  | |
 
