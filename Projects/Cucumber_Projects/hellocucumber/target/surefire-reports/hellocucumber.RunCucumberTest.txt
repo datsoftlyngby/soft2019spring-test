@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: hellocucumber.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec <<< FAILURE!
+Sunday isn\'t Friday(Is it Friday yet?)  Time elapsed: 0.134 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Nope[]> but was:<Nope[xxxxxxx]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at hellocucumber.Stepdefs.i_should_be_told(Stepdefs.java:33)
+	at ?.I should be told "Nope"(hellocucumber/is_it_friday_yet.feature:7)
