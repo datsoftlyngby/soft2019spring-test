@@ -58,36 +58,48 @@ The student can:
 -	Be able to discuss software quality from a test perspective
 
 ### Unit testing
-- Produce testable code
-- Design, structure, and automate tests
-- Know how to apply equivalence partitioning and boundary value analysis in tests
-- Know general features and usage of xUnit Framework API
-- Implement high quality automated tests with xUnit Framework
+-	Be able to design, structure, and automate unit tests
+-	Know general features and usage of xUnit Framework API
+-	Implement high quality automated tests with xUnit Framework
+-	Perform repeated, parameterized and dynamic tests with uniform input values from different sources, such as arrays, lists and files
+-	Explain the advantages and the disadvantages of different assertion libraries and using alternative matchers
 
-### Testability
 
-### Specification based testing techniques
-- Describe the benefits and construction of decision tables and state transition models in the context of test case design
-- Create and use decision tables and state transition models in tests
-- Explain the concept and need for data-driven testing and getting test data from files
-- Perform repeated, parameterized and dynamic tests with uniform input values from different sources, such as arrays, lists and files
-- Explain the advantages and the disadvantages of different assertion libraries and using alternative matchers
-
-### Dependencies
-- Use interfaces and apply dependency injection to make code more testable
-- Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
-- Perform state testing and behavior testing
-- Be able to setup and use Mockito
-
-### TDD
-
-### Integration testing
+### Integration Testing
 -	Understand integration testing in general
 -	Know different approaches to integration testing
 -	Handle production and test databases separately
 -	Automate integration tests using test databases, database testing frameworks, in-memory databases and mocking
+-	Be able to test APIs (REST services) with tool like REST Assured
 
-### Functional testing
+### System Testing
+-	Know the difference between system testing and acceptance testing
+-	Be able to capture requirements as system tests
+-	Be able to automate system tests for web applications with Selenium 
+-	Be able to do Behavior-Driven-Development with Gherkin to capture customer examples and Cucumber to run test scenarios against your system under test
+
+
+### Test Design Techniques
+- Be able to describe the purpose of equivalence partitioning and boundary value analysis in tests
+-	Be able to apply equivalence partitioning and boundary value analysis in tests
+-	Describe the benefits and construction of decision tables and state transition models in the context of test case design
+-	Create and use decision tables and state transition models in tests
+-	Explain the concept and need for data-driven testing and getting test data from files
+-	Explain the purpose of test coverage and how to measure code coverage
+-	Be able to use a code coverage tool such as JaCoCo
+-	Be able to do structural test case design
+-	Explain the importance and value of static test techniques
+-	Be able to use static test tools such as CheckStyle for coding standards and JaCoCo/Source Code Metrics to calculate metrics such as cyclomatic complexity.
+
+### Testability
+-	Be able to describe the benefits of testable software
+-	Be able to produce testable software
+-	Be able to design software with Test-Driven Development – Classic Style and Mockist style
+-	Use interfaces and apply dependency injection to make code more testable
+-	Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
+-	Perform state testing and behavior testing
+-	Be able to setup and use Mockito
+
 
 ### Nonfunctional testing
 
