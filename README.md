@@ -47,15 +47,15 @@ The student can:
 ## Learning objectives (Per topic)
 
 ### Testing in Software Life Cycle 
-•	Be able to compare different test types and their objectives (functional, non-functional, maintenance)
-•	Be able to compare different test levels and their objectives (unit, integration, system, user acceptance)
-•	Be able to use the Test Pyramid as a guideline to how much test automation to put into each test level.
-•	Know the activities in a traditional test process (ISTQB 2011)
-•	Know different roles involved in testing (BA, Dev, Tester etc)
-•	Be able to explain the principles and characteristics of agile testing 
-•	Be able to explain testing objectives that critique and support software respectively (validation and verification)
-•	Be able to explain the Agile Test Quadrants and how they can be used as part of a test strategy
-•	Be able to discuss software quality from a test perspective
+-	Be able to compare different test types and their objectives (functional, non-functional, maintenance)
+-	Be able to compare different test levels and their objectives (unit, integration, system, user acceptance)
+-	Be able to use the Test Pyramid as a guideline to how much test automation to put into each test level.
+-	Know the activities in a traditional test process (ISTQB 2011)
+-	Know different roles involved in testing (BA, Dev, Tester etc)
+-	Be able to explain the principles and characteristics of agile testing 
+-	Be able to explain testing objectives that critique and support software respectively (validation and verification)
+-	Be able to explain the Agile Test Quadrants and how they can be used as part of a test strategy
+-	Be able to discuss software quality from a test perspective
 
 ### Unit testing
 - Produce testable code
