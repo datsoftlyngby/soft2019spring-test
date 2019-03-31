@@ -44,7 +44,7 @@ The student can:
 * Plan and manage the implementation of internal as well as external test of a system
 * Design testable systems
 
-## Learning objectives (Per topic)
+## Learning objectives (Specific for the course)
 
 ### Testing in Software Life Cycle 
 -	Be able to compare different test types and their objectives (functional, non-functional, maintenance)
