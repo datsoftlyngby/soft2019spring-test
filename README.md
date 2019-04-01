@@ -171,7 +171,7 @@ Starting the 18th of March in week 12 and ending the 29th of April in week there
 
 ## Semester project
 The semester project will start the 29th of April in week 18 and end the 24th of May.
-It must be completed in groups consisting 4 - 5 group members.
+It must be completed in groups consisting 3 - 4 group members.
 During the semester project period, the group must attend two group reviews of their project, in order to receive the study points given for them.
 
 <hr>
