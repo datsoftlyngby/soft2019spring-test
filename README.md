@@ -103,7 +103,7 @@ The student can:
 
 ### Nonfunctional testing
 
-### Continuous integration / Continous deployment
+### Continuous integration / Continuous deployment
 
 <hr>
 
