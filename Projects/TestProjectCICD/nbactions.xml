@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-mvn test</actionName>
+            <displayName>mvn test</displayName>
+            <goals>
+                <goal>test</goal>
+                
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-mvn verify</actionName>
+            <displayName>mvn verify</displayName>
+            <goals>
+                <goal>mvn</goal>
+                <goal>verify</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-mvn verify verifyLocal</actionName>
+            <displayName>mvn verify verifyLocal</displayName>
+            <goals>
+                <goal>verify</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>verifyLocal</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>

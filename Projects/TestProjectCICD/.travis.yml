@@ -1,0 +1,71 @@
+language: java
+
+jdk: openjdk11
+
+cache:
+  directories:
+  - "$HOME/.m2"
+
+env:
+  matrix:
+  - DATABASE=mysql
+  - SERVER=tomcat
+  
+  global:
+    secure: T2Pt/MonqRH3bNlvX5xLKUYt6UaRaqWHK8OTHgWvgce1EZeUffuZpyzJG2Qm1H8pG/NDFPvYGkDL2XCoSCEAk6KI9VlXLNQY4578MIk4SAPPenhnkhZdqmFPaQbPZIg+cqDNpDs/Cs/t0N+QRIoYdWlcze5XYFKiMYOvLrtlu0NmNwn4CTTRi8gIytSM7cgOnyjrwSyhNvhXkL2GkXRGYeqe+4yrXGyhGSfw4XvuHukk8PfwD85i+OBL4tKlLmJbrKKqoKyBVKRJ/Vg3aI2EHWYVzpUwUJ9F0OQTTJJ8H39BUX8YVp1gexa2w53hreCiriPfdzKqqwHLvgkVAf/mh/HtVqsM3fc3Ao+UJXUVgHxVdHSEdIy34Ka1C7alBveqS0pSzOOQgnMThL/L1/8KZXk+UAHJTfxb4bsDznAy3tK9ozmSd+6fSUS0iUicZ+dPpMEhiWhckfKFH7xejCTtv3Qyd+dUyRG311mmm2TZKyE+nQrgZH/ie59g2TSywk501eV/rCBX4trR/LATOU8pHgCQI2osycULoeHmYI67CanUP7jCaoN4IWEMRGaXpN5BgyBwu07HxDKK4FrIA1jHYa3Kj4GvVkbf83SJF5ysxrRmFfIMoFRBb3x7MnDYLwHjytwpzryazTLkjtSrnjuwmiTFUglA7GKelLtj6TOotWY=
+
+before_install:
+- echo "Before install..."
+- bash scripts/install.sh
+
+- echo $SOMEVAR
+
+- openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv -in traviskey_openssh.enc -out ./traviskey_openssh -d
+#- eval "$(ssh-agent -s)"
+- chmod 600 ./traviskey_openssh
+- ssh-add ./traviskey_openssh
+
+install:
+- echo "Install..."
+
+- bash scripts/install.sh
+
+after_install:
+- echo "After install..."
+
+before_script:
+- echo "Before script..."
+
+script:
+- echo "Script..."
+
+after_script:
+- echo "After script..."
+
+after_failure:
+- echo "After failure..."
+
+after_success:
+- echo "After success..."
+
+- mvn package
+
+- scp -o StrictHostKeyChecking=no -i ./traviskey_openssh ./target/TestProjectCICD-1.0.war root@$DOIP:~/testfolder/TestProjectCICD.war
+
+- ssh -o StrictHostKeyChecking=no -i ./traviskey_openssh root@$DOIP "bash -s" < ./scripts/digitalocean.sh "$TOMCAT_USER $TOMCAT_PASSWORD hello"
+
+before_deploy:
+- echo "Before deploy..."
+
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  on:
+    all_branches: true
+
+  #- mvn clean tomcat7:deploy
+
+  #skip_cleanup: true
+  
+after_deploy:
+- echo "After deploy..."
