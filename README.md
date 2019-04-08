@@ -165,7 +165,7 @@ Starting the 18th of March in week 12 and ending the 29th of April in week there
 | 7 |  Integration testing  | [07 Integration Testing Assignment](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/07%20Integration%20Testing%20Assignment.pdf)|
 | 8 |  Functional testing  |[08 Functional Testing (Selenium) - see end of slide deck](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Slides/08%20Functional%20testing.pdf) |
 | 9 |  Nonfunctional testing  |[09 Nonfunctional Testing](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/09%20Nonfunctional%20Testing%20Assignment.pdf) |
-| 10 |  CI / CD  | |
+| 10 |  CI / CD  |[10 CI / CD](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/10%20CI%20CD%20Assignment.pdf) |
 
 <hr>
 
@@ -173,6 +173,8 @@ Starting the 18th of March in week 12 and ending the 29th of April in week there
 The semester project will start the 29th of April in week 18 and end the 24th of May.
 It must be completed in groups consisting 3 - 4 group members.
 During the semester project period, the group must attend two group reviews of their project, in order to receive the study points given for them.
+
+[Test Semester Project](https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Assignments/TestSemesterProject.pdf)
 
 <hr>
 
