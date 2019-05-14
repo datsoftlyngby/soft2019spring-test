@@ -20,6 +20,7 @@ Testable code, code coverage, regression testing, technical reviews, frameworks 
 <hr>
 
 ## Learning objectives (General)
+
 ### Knowledge
 The student must have knowledge of:
 
@@ -57,13 +58,33 @@ The student can:
 -	Be able to explain the Agile Test Quadrants and The Test Pyramid and how they can be used as part of a test strategy
 -	Be able to discuss software quality from a test perspective
 
-### Unit testing
+### Testability
+-	Be able to describe the benefits of testable software
+-	Be able to produce testable software
+-	Be able to design software with Test-Driven Development – Classic Style and Mockist style
+-	Use interfaces and apply dependency injection to make code more testable
+-	Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
+-	Perform state testing and behavior testing
+-	Be able to setup and use Mockito
+
+### Test Case Design
+- Be able to describe the purpose of equivalence partitioning and boundary value analysis in tests
+-	Be able to apply equivalence partitioning and boundary value analysis in tests
+-	Describe the benefits and construction of decision tables and state transition models in the context of test case design
+-	Create and use decision tables and state transition models in tests
+-	Explain the concept and need for data-driven testing and getting test data from files
+-	Explain the purpose of test coverage and how to measure code coverage
+-	Be able to use a code coverage tool such as JaCoCo
+-	Be able to do structural test case design
+-	Explain the importance and value of static test techniques
+-	Be able to use static test tools such as CheckStyle for coding standards and JaCoCo/Source Code Metrics to calculate metrics such as cyclomatic complexity
+
+### Unit Testing
 -	Be able to design, structure, and automate unit tests
 -	Know general features and usage of xUnit Framework API
 -	Implement high quality automated tests with xUnit Framework
 -	Perform repeated, parameterized and dynamic tests with uniform input values from different sources, such as arrays, lists and files
 -	Explain the advantages and the disadvantages of different assertion libraries and using alternative matchers
-
 
 ### Integration Testing
 -	Understand integration testing in general
@@ -78,32 +99,17 @@ The student can:
 -	Be able to automate system tests for web applications with Selenium 
 -	Be able to do Behavior-Driven-Development with Gherkin to capture customer examples and Cucumber to run test scenarios against your system under test
 
+### Functional Testing / Nonfunctional Testing
+-	Know the difference between functional and nonfunctional testing
+-	Know the different types of nonfunctional tests and the basic implications involved in nonfunctional testing
+- Set up and execute different types of functional and non functional tests
 
-### Test Design Techniques
-- Be able to describe the purpose of equivalence partitioning and boundary value analysis in tests
--	Be able to apply equivalence partitioning and boundary value analysis in tests
--	Describe the benefits and construction of decision tables and state transition models in the context of test case design
--	Create and use decision tables and state transition models in tests
--	Explain the concept and need for data-driven testing and getting test data from files
--	Explain the purpose of test coverage and how to measure code coverage
--	Be able to use a code coverage tool such as JaCoCo
--	Be able to do structural test case design
--	Explain the importance and value of static test techniques
--	Be able to use static test tools such as CheckStyle for coding standards and JaCoCo/Source Code Metrics to calculate metrics such as cyclomatic complexity.
-
-### Testability
--	Be able to describe the benefits of testable software
--	Be able to produce testable software
--	Be able to design software with Test-Driven Development – Classic Style and Mockist style
--	Use interfaces and apply dependency injection to make code more testable
--	Know the difference between mocks, stubs, fakes, spies and dummies and when to use them
--	Perform state testing and behavior testing
--	Be able to setup and use Mockito
-
-
-### Nonfunctional testing
-
-### Continuous integration / Continuous deployment
+### Continuous Integration / Continuous Deployment
+-	Differentiate between automated testing, test automation, continuous integration, delivery and deployment and DevOps principles
+-	Run different tests separately using test suites and build goals, plugins, profiles and properties
+-	Test locally and remotely using a virtual machine image
+-	Deploy remotely using a virtual machine image
+-	Set up an automation server capable of building, testing and deploying depending on test results
 
 <hr>
 
