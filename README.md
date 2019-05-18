@@ -89,8 +89,8 @@ The student can:
 ### Integration Testing
 -	Understand integration testing in general
 -	Know different approaches to integration testing
--	Handle production and test databases separately
--	Automate integration tests using test databases, database testing frameworks, in-memory databases and mocking
+-	Be able to handle production and test databases separately
+-	Be able to automate integration tests using test databases, database testing frameworks, in-memory databases and mocking
 -	Be able to test APIs (REST services) with tool like REST Assured
 
 ### System Testing
@@ -105,10 +105,10 @@ The student can:
 - Set up and execute different types of functional and non functional tests
 
 ### Continuous Integration / Continuous Deployment
--	Differentiate between automated testing, test automation, continuous integration, delivery and deployment and DevOps principles
--	Run different tests separately using test suites and build goals, plugins, profiles and properties
--	Test locally and remotely using a virtual machine image
--	Deploy remotely using a virtual machine image
+-	Know the difference between automated testing, test automation, continuous integration, delivery and deployment and DevOps principles
+-	Be able to execute different tests separately using test suites and build goals, plugins, profiles and properties
+-	Be able to test locally and remotely using a virtual machine image
+-	Be able to deploy remotely using a virtual machine image
 -	Set up an automation server capable of building, testing and deploying depending on test results
 
 <hr>
