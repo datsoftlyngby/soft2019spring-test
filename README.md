@@ -103,6 +103,8 @@ The student can:
 -	Know the difference between functional and nonfunctional testing
 -	Know the different types of nonfunctional tests and the basic implications involved in nonfunctional testing
 - Set up and execute different types of functional and non functional tests
+- Be able to set up and execute a basic performance test
+- Produce measurements and metrics regarding system performance
 
 ### Continuous Integration / Continuous Deployment
 -	Know the difference between automated testing, test automation, continuous integration, delivery and deployment and DevOps principles
