@@ -55,7 +55,7 @@ The student can:
 -	Know different roles involved in testing (BA, Dev, Tester etc)
 -	Be able to explain the principles and characteristics of agile testing 
 -	Be able to explain testing objectives that critique and support software respectively (validation and verification)
--	Be able to explain the Agile Test Quadrants and The Test Pyramid and how they can be used as part of a test strategy
+-	Be able to explain the Agile Test Quadrants as part of a test strategy
 -	Be able to discuss software quality from a test perspective
 
 ### Testability
