@@ -52,7 +52,7 @@ The student can:
 -	Be able to compare different test levels and their objectives (unit, integration, system, user acceptance)
 -	Be able to use the Test Pyramid as a guideline to how much test automation to put into each test level.
 -	Know the activities in a traditional test process (ISTQB 2011)
--	Know different roles involved in testing (BA, Dev, Tester etc)
+-	Know different roles involved in testing (Business Analyst/PO, Dev, Tester etc)
 -	Be able to explain the principles and characteristics of agile testing 
 -	Be able to explain testing objectives that critique and support software respectively (validation and verification)
 -	Be able to explain the Agile Test Quadrants as part of a test strategy
